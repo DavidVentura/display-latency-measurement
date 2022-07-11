@@ -1,0 +1,133 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_PHOTO R?
+U 1 1 62CA293F
+P 6350 3200
+F 0 "R?" H 6162 3246 50  0000 R CNN
+F 1 "R_PHOTO" H 6162 3155 50  0000 R CNN
+F 2 "" V 6400 2950 50  0001 L CNN
+F 3 "~" H 6350 3150 50  0001 C CNN
+	1    6350 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62CA3F3C
+P 6350 3750
+F 0 "R?" H 6420 3796 50  0000 L CNN
+F 1 "R" H 6420 3705 50  0000 L CNN
+F 2 "" V 6280 3750 50  0001 C CNN
+F 3 "~" H 6350 3750 50  0001 C CNN
+	1    6350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 62CA4AAF
+P 5850 3950
+F 0 "SW?" V 5804 4098 50  0000 L CNN
+F 1 "SW_Push" V 5895 4098 50  0000 L CNN
+F 2 "" H 5850 4150 50  0001 C CNN
+F 3 "~" H 5850 4150 50  0001 C CNN
+	1    5850 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L SSD1306-128x64_OLED:SSD1306 Brd?
+U 1 1 62CA5ACB
+P 6250 4500
+F 0 "Brd?" V 6296 4222 50  0000 R CNN
+F 1 "SSD1306" V 6205 4222 50  0000 R CNN
+F 2 "" H 6250 4750 50  0001 C CNN
+F 3 "" H 6250 4750 50  0001 C CNN
+	1    6250 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62CBA0AB
+P 7400 3900
+F 0 "#PWR?" H 7400 3650 50  0001 C CNN
+F 1 "GND" H 7405 3727 50  0000 C CNN
+F 2 "" H 7400 3900 50  0001 C CNN
+F 3 "" H 7400 3900 50  0001 C CNN
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3450 6350 3450
+Wire Wire Line
+	6350 3450 6350 3350
+Connection ~ 6350 3450
+Wire Wire Line
+	6350 3600 6350 3450
+Wire Wire Line
+	6350 2950 6350 3050
+Wire Wire Line
+	5300 3750 5850 3750
+Wire Wire Line
+	5850 4150 5300 4150
+Wire Wire Line
+	6350 3900 7400 3900
+$Comp
+L MCU_RaspberryPi_and_Boards:Pico U?
+U 1 1 62CA0FDD
+P 4600 3500
+F 0 "U?" H 4600 4715 50  0000 C CNN
+F 1 "Pico" H 4600 4624 50  0000 C CNN
+F 2 "RPi_Pico:RPi_Pico_SMD_TH" V 4600 3500 50  0001 C CNN
+F 3 "" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4350 5300 4350
+Wire Wire Line
+	5300 4450 5900 4450
+$Comp
+L power:GND #PWR?
+U 1 1 62CE23A8
+P 5850 4900
+F 0 "#PWR?" H 5850 4650 50  0001 C CNN
+F 1 "GND" H 5855 4727 50  0000 C CNN
+F 2 "" H 5850 4900 50  0001 C CNN
+F 3 "" H 5850 4900 50  0001 C CNN
+	1    5850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 62CE33AB
+P 5600 4900
+F 0 "#PWR?" H 5600 4750 50  0001 C CNN
+F 1 "+3.3V" H 5615 5073 50  0000 C CNN
+F 2 "" H 5600 4900 50  0001 C CNN
+F 3 "" H 5600 4900 50  0001 C CNN
+	1    5600 4900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5900 4550 5600 4550
+Wire Wire Line
+	5600 4550 5600 4900
+Wire Wire Line
+	5850 4900 5850 4650
+Wire Wire Line
+	5850 4650 5900 4650
+Wire Wire Line
+	5300 2950 6350 2950
+$EndSCHEMATC

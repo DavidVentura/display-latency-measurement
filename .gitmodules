@@ -1,0 +1,9 @@
+[submodule "board/KiCad-RP-Pico"]
+	path = board/KiCad-RP-Pico
+	url = git@github.com:ncarandini/KiCad-RP-Pico.git
+[submodule "board/RP_Silicon_KiCad"]
+	path = board/RP_Silicon_KiCad
+	url = git@github.com:HeadBoffin/RP_Silicon_KiCad.git
+[submodule "board/KiCad-SSD1306-128x64"]
+	path = board/KiCad-SSD1306-128x64
+	url = git@github.com:pforrmi/KiCad-SSD1306-128x64.git
