@@ -1,4 +1,5 @@
 #include <stdbool.h>
+#include <stdio.h>
 
 #include <SDL.h>
 
@@ -25,6 +26,7 @@ bool init_video()
         printf( "Window could not be created! SDL_Error: %s\n", SDL_GetError() );
         return false;
     }
+    SDL_GL_SetSwapInterval(1); // enable vsync with 1
     gRenderer = SDL_CreateRenderer( gWindow, -1, SDL_RENDERER_ACCELERATED );
     if( gRenderer == NULL )
     {
@@ -81,10 +83,10 @@ bool handle_input() {
 void render() {
     SDL_RenderClear(gRenderer);
     SDL_RenderPresent(gRenderer);
-    SDL_Delay(1);
+    SDL_Delay(0);
 }
 
-int main() {
+int main(int argc, char* argv[]) {
     if(!init_video()) {
         return 1;
     }
