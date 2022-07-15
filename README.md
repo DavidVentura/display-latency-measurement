@@ -28,3 +28,11 @@ once that happens, send a 'release' event for the spacebar.
 The light measurement is very simple: read the value of a light-dependent resistor (LDR).
 
 There is a (terrible) kicad schematic under `board/board`.
+
+
+## Images
+
+
+![Schematics](images/board_v1.png?raw=1)
+
+![Picture](images/pic.jpg?raw=1)
